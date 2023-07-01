@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Moriya Ryota Portfolio",
     type: "website",
-    // url: "http://alberthathidara.com/",
+    url: "https://moriyaryota.com/",
   },
 };
 
@@ -49,11 +49,22 @@ const socialMediaLinks = [
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/ryota-moriya-991059271/",
+    // fontAwesomeIcon: "fa:linkedin-square",
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0a66c2 ", // Reference https://simpleicons.org/?q=github
+  },
+  
+  {
     name: "Gmail",
     link: "mailto:riotamoriya@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
+
+
+
   // {
   //   name: "Telegram",
   //   link: "https://t.me/RainbowSunDev",
