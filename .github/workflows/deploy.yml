@@ -24,6 +24,7 @@ jobs:
       run: npm run build
 
     - name: Deploy
+      uses: jakejarvis/s3-sync-action@master
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -31,6 +32,7 @@ jobs:
         aws s3 sync --delete --region ${{ secrets.AWS_REGION }} ./build/ s3://${{ secrets.S3_BUCKET }}/
 
     - name: Clear cache in CloudFront
+      uses: chetan/invalidate-cloudfront-action@v1.3
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
