@@ -57,7 +57,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "husky": {
     "hooks": {
