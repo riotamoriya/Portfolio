@@ -6,11 +6,6 @@
 
 <h3 align="center"> BackGround </h3>
 
-<li>I came to mind that my portfolio site for Job searching.</li>
-<br/>
-<li>The period should have been quicliy, about 2 days.</li>
-<br/>
-<li>
 Using a Template created with React (and Bootstrap) has powerful view design and a format as portfolio. In addition to it, the one must be highly customizable and extensible.
 <br/>
 I found the most powerful one.
